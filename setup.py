@@ -16,13 +16,17 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     license='MIT',
-    keywords='france',
+    keywords='django france',
     install_requires=[
+        'django-representatives-votes>=0.0.15',
+        'django>=1.8,<1.9',
+        'djangorestframework',
+        'lxml==3.4.4',
+        'scrapy'
     ],
     extras_require={
-        'Scrap online data': 'scrapy',
     },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',
